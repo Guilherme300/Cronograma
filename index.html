@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cronograma</title>
+</head>
+<body>
+    <div class="blackScreen"></div>
+    <div class="configWindow">
+
+        <div class="createActivity">
+            <h1>Criar nova atividade</h1>
+            <div class="grid-activity">
+    
+                <div class="colors">
+                    <h2>Cores</h2>
+                    <div class="containerPB">
+                        <p>Fundo</p>
+                        <div class="backgroundColor"></div>
+                    </div>
+                    <div class="containerPB">
+                        <p>Texto</p>
+                        <div class="textColor"></div>
+                    </div>
+                </div>
+            
+                <div class="activityInfos">
+                    <div>
+                        <p>Nome</p>
+                        <input type="text" id='activityName'>
+                    </div>
+                    
+                    <div>
+                        <p>Dia</p>
+                        <select id="selectDay">
+                        </select>
+                    </div>
+    
+                    <div>
+                        <p>Tempo</p>
+                        <input type="time" id='activityTime'>
+                    </div>
+    
+                    <button class="defaultButton activityBtn">Criar</button>
+                </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <h1 class="mainpage-title">Cronograma</h1>
+        <div class="container">
+            <div class="configsCrono">
+                <div class="configOption">
+                    <p class="configButton">Editar</p>
+                    <div class="configsWindow edit">
+                        <p id="config-save">Salvar</p>
+                        <span class="sep"></span>
+                        <p id="config-import">Importar</p>
+                        <p id="config-export">Exportar</p>
+                        <span class="sep"></span>
+                        <p id="config-deleteAll">Deletar tudo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="day">
+                <p>seg</p>
+                <div class="day-container"></div>
+            </div>
+
+            <div class="day">
+                <p>ter</p>
+                <div class="day-container"></div>
+            </div>
+
+            <div class="day">
+                <p>quar</p>
+                <div class="day-container"></div>
+            </div>
+
+            <div class="day">
+                <p>quin</p>
+                <div class="day-container"></div>
+            </div>
+
+            <div class="day">
+                <p>sex</p>
+                <div class="day-container"></div>
+            </div>
+
+            <div class="day">
+                <p>sab</p>
+                <div class="day-container"></div>
+            </div>
+
+            <div class="day">
+                <p>dom</p>
+                <div class="day-container"></div>
+            </div>
+
+            <div class='footer'>
+                <button class="defaultButton openCreateNewBtn">Criar</button>
+                <img id='deleteActivity' src="./src/delete_black_36dp.svg">
+            </div>
+        </div>
+
+    </div>
+    <script src="cronograma.js"></script>
+</body>
+</html>
